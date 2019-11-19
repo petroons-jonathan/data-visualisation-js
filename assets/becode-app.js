@@ -82,7 +82,11 @@ window.onload = function (){
     functionTable(table1, stats2);
     console.log(stats2)
 
-    
+    const svg2 = dimple.newSvg("#graph2", 500, 500);
+    let myChart = new dimple.chart(svg2, stats2);
+    myChart.addCategoryAxis("x", "X");
+    myChart.addMeasureAxis("y","Y");
+    myChart.addSeries(null, dimple.plot.bubble);
 
 
     constructionDiv("graph3", table2);
