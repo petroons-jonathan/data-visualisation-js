@@ -55,7 +55,7 @@ window.onload = function (){
     let chart = new dimple.chart(svg, stats1);
     chart.addCategoryAxis("x", "X");
     chart.addMeasureAxis("y","Y");
-    chart.addSeries(null, dimple.plot.bubble);
+    chart.addSeries(null, dimple.plot.line);
 
     let firstGraph = () => {
         let request = new XMLHttpRequest;
@@ -86,7 +86,7 @@ window.onload = function (){
     let myChart = new dimple.chart(svg2, stats2);
     myChart.addCategoryAxis("x", "X");
     myChart.addMeasureAxis("y","Y");
-    myChart.addSeries(null, dimple.plot.bubble);
+    myChart.addSeries(null, dimple.plot.bar);
 
 
     constructionDiv("graph3", table2);
