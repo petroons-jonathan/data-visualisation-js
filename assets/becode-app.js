@@ -1,9 +1,11 @@
 /* 
 // WRITE YOUR JAVASCRIPT BELOW THIS COMMENT 
-Your name :     
-Date :  
+Your name :     Petroons Jonathan
+Date :  19 novembre 2019
 Contact information : 
 What does this script do ? 
+
+
 ...
 */
 
@@ -28,7 +30,7 @@ window.onload = function (){
         target.insertAdjacentElement("beforebegin", div);
     }
 
-        // get the 
+        
     const functionTable = function bow2 (id, statsContent){
         let tableBody = id.getElementsByTagName("tbody");
         let tr = tableBody[0].getElementsByTagName("tr");
@@ -53,7 +55,7 @@ window.onload = function (){
     let chart = new dimple.chart(svg, stats1);
     chart.addCategoryAxis("x", "X");
     chart.addMeasureAxis("y","Y");
-    chart.addSeries(null, dimple.plot.line);
+    chart.addSeries(null, dimple.plot.bubble);
 
     let firstGraph = () => {
         let request = new XMLHttpRequest;
@@ -79,6 +81,9 @@ window.onload = function (){
     constructionDiv("graph2", table1);
     functionTable(table1, stats2);
     console.log(stats2)
+
+    
+
 
     constructionDiv("graph3", table2);
     functionTable(table2, stats3);
